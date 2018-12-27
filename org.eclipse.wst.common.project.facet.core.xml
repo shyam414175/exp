@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faceted-project>
+  <installed facet="cloudfoundry.standalone.app" version="1.0"/>
+</faceted-project>
+
+
+<server>
+
+    <id>MuleRepository</id>
+    <username>YOUR_ID</username>
+    <password>YOUR_PASSWORD</password>
+
+</server>
+
+
+
+<profile>
+
+    <id>Mule</id>
+    <activation>
+        <activeByDefault>true</activeByDefault>
+    </activation>
+    <repositories>
+        <repository>
+            <id>MuleRepository</id>
+            <name>MuleRepository</name>
+            <url>https://repository.mulesoft.org/nexus-ee/content/repositories/releases-ee/</url>
+            <layout>default</layout>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
+</profile>
+
